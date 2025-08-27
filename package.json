@@ -1,0 +1,26 @@
+{
+  "name": "eslint-plugin-n8n-nodes",
+  "version": "1.0.0",
+  "description": "ESLint plugin for linting n8n nodes.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin",
+    "n8n"
+  ],
+  "author": "Wayne VanderVelde",
+  "homepage": "https://github.com/waynevandervelde/eslint-plugin-n8n-nodes#readme",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/waynevandervelde/eslint-plugin-n8n-nodes.git"
+  },
+  "bugs": {
+    "url": "https://github.com/waynevandervelde/eslint-plugin-n8n-nodes/issues"
+  },
+  "packageManager": "pnpm@10.15.0"
+}
