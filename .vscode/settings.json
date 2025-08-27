@@ -1,8 +1,9 @@
 {
-  "search.exclude": {
-    "node_modules": true
-  },
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
-  "workbench.colorTheme": "Abyss"
+	"search.exclude": {
+		"node_modules": true
+	},
+	"editor.defaultFormatter": "dbaeumer.vscode-eslint",
+	"editor.formatOnSave": true,
+	"workbench.colorTheme": "Abyss",
+	"prettier.enable": false
 }
