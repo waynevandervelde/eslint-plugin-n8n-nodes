@@ -1,43 +1,42 @@
 {
-	"name": "eslint-plugin-n8n-nodes",
-	"version": "1.0.0",
-	"description": "ESLint plugin for linting n8n nodes.",
-	"main": "index.js",
-	"type": "module",
-	"scripts": {
-		"test": "jest",
-		"lint": "eslint . --ext .ts",
-		"format": "prettier --ignore-path .gitignore --write ."
-	},
-	"keywords": [
-		"eslint",
-		"eslintplugin",
-		"eslint-plugin",
-		"n8n"
-	],
-	"author": "Wayne VanderVelde",
-	"homepage": "https://github.com/waynevandervelde/eslint-plugin-n8n-nodes#readme",
-	"license": "MIT",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/waynevandervelde/eslint-plugin-n8n-nodes.git"
-	},
-	"bugs": {
-		"url": "https://github.com/waynevandervelde/eslint-plugin-n8n-nodes/issues"
-	},
-	"packageManager": "pnpm@10.15.0",
-	"devDependencies": {
-		"@eslint/js": "^9.34.0",
-		"@eslint/json": "^0.13.2",
-		"@eslint/markdown": "^7.2.0",
-		"eslint": "^9.34.0",
-		"eslint-config-prettier": "^10.1.8",
-		"eslint-plugin-prettier": "^5.5.4",
-		"globals": "^16.3.0",
-		"jest": "^30.1.0",
-		"jiti": "^2.5.1",
-		"prettier": "3.6.2",
-		"typescript": "^5.9.2",
-		"typescript-eslint": "^8.41.0"
-	}
+  "name": "eslint-plugin-n8n-nodes",
+  "version": "0.0.0",
+  "description": "ESLint plugin for linting n8n nodes",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin"
+  ],
+  "author": "Wayne VanderVelde",
+  "main": "./lib/index.js",
+  "exports": "./lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "lint": "npm-run-all \"lint:*\"",
+    "lint:eslint-docs": "npm-run-all \"update:eslint-docs -- --check\"",
+    "lint:js": "eslint .",
+    "test": "mocha tests --recursive",
+    "update:eslint-docs": "eslint-doc-generator"
+  },
+  "dependencies": {
+    "requireindex": "^1.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.0.0",
+    "@eslint/js": "^9.0.0",
+    "eslint-doc-generator": "^2.0.0",
+    "eslint-plugin-eslint-plugin": "^6.0.0",
+    "eslint-plugin-n": "^17.0.0",
+    "mocha": "^11.0.0",
+    "npm-run-all2": "^6.1.2"
+  },
+  "engines": {
+    "node": "^18.18.0 || ^20.9.0 || >=21.1.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=8.57.0"
+  },
+  "license": "MIT"
 }
